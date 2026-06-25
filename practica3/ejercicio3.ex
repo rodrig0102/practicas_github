@@ -5,7 +5,6 @@ defmodule Main do
       IO.read(:line)
       |> String.split()
       |> Enum.map(&String.to_integer/1)
-
     IO.puts(contar_operaciones(numeros, 0))
   end
   defp contar_operaciones(lista, contador) do
